@@ -37,8 +37,6 @@ export const doctor = {
 export const contact = {
   // Consultations are booked through ZindagiCare.
   bookingHref: BOOKING_URL,
-  phoneDisplay: '[Phone number]',
-  phoneHref: null, // e.g. 'tel:+92XXXXXXXXXX' — the number becomes a link once set
   email: null, // e.g. 'appointments@zindagicare.com' — hidden while null
   addressLines: ['Shalamar Hospital', 'Lahore, Pakistan'],
   languages: 'English, Urdu',

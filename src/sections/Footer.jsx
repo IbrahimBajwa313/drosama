@@ -12,13 +12,10 @@ export default function Footer() {
 
           <div className="footer-col">
             <h2 className="footer-h">Contact</h2>
-            {contact.phoneHref ? (
-              <a href={contact.phoneHref} className="ulink">
-                {contact.phoneDisplay}
-              </a>
-            ) : (
-              <span>{contact.phoneDisplay}</span>
-            )}
+            <a href={contact.bookingHref} className="ulink" target="_blank" rel="noopener noreferrer">
+              Book via ZindagiCare
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
             {contact.email && (
               <a href={`mailto:${contact.email}`} className="ulink">
                 {contact.email}

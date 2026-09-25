@@ -162,7 +162,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="menu-foot">
-          {contact.phoneHref ? <a href={contact.phoneHref}>{contact.phoneDisplay}</a> : <span>{contact.addressLines.join(', ')}</span>}
+          <span>{contact.addressLines.join(', ')}</span>
           {contact.email && <a href={`mailto:${contact.email}`}>{contact.email}</a>}
         </div>
       </div>

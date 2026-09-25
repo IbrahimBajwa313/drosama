@@ -58,15 +58,12 @@ export default function FinalCTA() {
         </p>
         <dl className="cta-details">
           <div>
-            <dt>Telephone</dt>
+            <dt>Booking</dt>
             <dd>
-              {contact.phoneHref ? (
-                <a href={contact.phoneHref} className="ulink">
-                  {contact.phoneDisplay}
-                </a>
-              ) : (
-                contact.phoneDisplay
-              )}
+              <a href={contact.bookingHref} className="ulink" target="_blank" rel="noopener noreferrer">
+                Online via ZindagiCare
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
             </dd>
           </div>
           {contact.email ? (
