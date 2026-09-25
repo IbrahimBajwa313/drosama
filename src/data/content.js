@@ -8,7 +8,7 @@
  *  Values wrapped in [BRACKETS] are still placeholders — replace
  *  them with verified details.
  *
- *  Portrait, story and about-detail photography is of Dr. Osama
+ *  Portrait, story and about photography is of Dr. Osama
  *  (AI-upscaled from the originals); ZindagiCare images are from
  *  the ZindagiCare poster. All other photography is licensed stock
  *  (Unsplash) of rooms and equipment only — no other clinicians.
@@ -127,8 +127,7 @@ export const about = {
     'A graduate of Shalamar Medical College, he served as Medical Officer in the Endocrinology Department at Shalamar Hospital and is Medical Incharge of the Maryam Nawaz Health Clinic in Pendorian, Sanghla. He is also Co-Founder & CEO of ZindagiCare, a digital healthcare platform working to make quality care accessible across Pakistan.',
     'Patients describe him the same way: he listens carefully, explains everything clearly, and makes people feel heard.',
   ],
-  portrait: doctor.portrait,
-  detail: img('about-detail', 'Dr. Osama guiding a hands-on surgical skills workshop'),
+  portrait: img('about-portrait', 'Dr. Osama guiding a hands-on surgical skills workshop'),
   /**
    * Set `value` to a number to enable the count-up animation;
    * otherwise `placeholder` text is shown as-is.

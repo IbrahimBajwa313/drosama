@@ -827,17 +827,6 @@
   max-height: 78vh;
   width: 100%;
 }
-.about-detail-wrap {
-  position: absolute;
-  right: -14%;
-  bottom: 14%;
-  width: 40%;
-  z-index: 2;
-}
-.about-detail {
-  aspect-ratio: 1;
-  box-shadow: 0 0 0 10px var(--paper);
-}
 .about-caption {
   display: flex;
   justify-content: space-between;
@@ -921,11 +910,6 @@
     position: relative;
     top: 0;
     width: min(100%, 560px);
-  }
-  .about-detail-wrap {
-    right: -4%;
-    bottom: -8%;
-    width: 38%;
   }
   .about-body {
     padding-top: 0;

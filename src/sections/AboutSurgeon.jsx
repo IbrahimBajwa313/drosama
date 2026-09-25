@@ -13,15 +13,7 @@ export default function AboutSurgeon() {
       const q = gsap.utils.selector(ref)
       const mm = gsap.matchMedia()
 
-      mm.add({ desktop: MEDIA.desktop, mobile: MEDIA.mobile }, ({ conditions }) => {
-        // detail image drifts against the main portrait
-        if (conditions.desktop) {
-          gsap.fromTo(
-            q('.about-detail-wrap'),
-            { y: 140 },
-            { y: -140, ease: EASE.scrub, scrollTrigger: { trigger: ref.current, start: 'top bottom', end: 'bottom top', scrub: true } },
-          )
-        }
+      mm.add({ desktop: MEDIA.desktop, mobile: MEDIA.mobile }, () => {
         gsap.from(q('.about-bio p'), {
           y: 36,
           opacity: 0,
@@ -50,9 +42,6 @@ export default function AboutSurgeon() {
         <div className="about-media">
           <div className="about-sticky">
             <ImageReveal image={about.portrait} from="bottom" className="about-portrait" sizes="(min-width: 1024px) 40vw, 90vw" />
-            <div className="about-detail-wrap">
-              <ImageReveal image={about.detail} from="left" className="about-detail" sizes="(min-width: 1024px) 18vw, 45vw" parallax={0} />
-            </div>
             <p className="about-caption">
               <span>{doctor.name}</span>
               <span>{doctor.specialty}</span>
