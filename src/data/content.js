@@ -6,7 +6,7 @@
  *  here. Components only read from this file.
  *
  *  Values wrapped in [BRACKETS] are still placeholders — replace
- *  them with verified details (phone number, etc.).
+ *  them with verified details.
  *
  *  Portrait, story and about-detail photography is of Dr. Osama
  *  (AI-upscaled from the originals); ZindagiCare images are from
@@ -37,10 +37,17 @@ export const doctor = {
 export const contact = {
   // Consultations are booked through ZindagiCare.
   bookingHref: BOOKING_URL,
+  phoneDisplay: '0336 7000304',
+  phoneHref: 'tel:+923367000304',
   email: null, // e.g. 'appointments@zindagicare.com' — hidden while null
   addressLines: ['Shalamar Hospital', 'Lahore, Pakistan'],
   languages: 'English, Urdu',
-  social: [{ label: 'ZindagiCare', href: ZINDAGICARE_URL }],
+  social: [
+    { label: 'ZindagiCare Profile', href: BOOKING_URL },
+    { label: 'ZindagiCare', href: ZINDAGICARE_URL },
+    { label: 'Facebook', href: 'https://www.facebook.com/osama.riaz.3766/' },
+    { label: 'Instagram', href: 'https://www.instagram.com/osamariaz88/' },
+  ],
 }
 
 export const freeCare = {
